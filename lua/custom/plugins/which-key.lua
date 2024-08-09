@@ -21,20 +21,6 @@ return {
       require('which-key').setup()
 
       -- Document existing key chains
-      require('which-key').register {
-        { '', group = 'Git [H]unk' },
-        { '', group = '[W]orkspace' },
-        { '', group = '[S]earch' },
-        { '', group = '[C]ode' },
-        { '', group = '[R]ename' },
-        { '', group = '[T]oggle' },
-        { '', group = '[D]ocument' },
-        { '', desc = '', hidden = true, mode = { 'n', 'n', 'n', 'n', 'n', 'n', 'n' } },
-      }
-      -- visual mode
-      require('which-key').register({
-        { '', desc = '<leader>h', mode = 'v' },
-      }, { mode = 'v' })
     end,
   },
 }
