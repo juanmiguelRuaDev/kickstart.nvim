@@ -18,23 +18,13 @@ return {
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     config = function() -- This is the function that runs, AFTER loading
-      require('which-key').setup()
-
-      -- Document existing key chains
-      require('which-key').register {
-        { '', group = 'Git [H]unk' },
-        { '', group = '[W]orkspace' },
-        { '', group = '[S]earch' },
-        { '', group = '[C]ode' },
-        { '', group = '[R]ename' },
-        { '', group = '[T]oggle' },
-        { '', group = '[D]ocument' },
-        { '', desc = '', hidden = true, mode = { 'n', 'n', 'n', 'n', 'n', 'n', 'n' } },
+      local wk = require 'which-key'
+      wk.add {
+        {
+          mode = { 'n', 'v' },
+          { '<leader>q', name = 'Quit' },
+        },
       }
-      -- visual mode
-      require('which-key').register({
-        { '', desc = '<leader>h', mode = 'v' },
-      }, { mode = 'v' })
     end,
   },
 }
