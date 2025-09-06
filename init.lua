@@ -141,9 +141,18 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
+-- Folding settings
+vim.opt.foldmethod = 'expr' -- Fold based on the result of a Vim expression
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldcolumn = '0' -- Show fold column
+vim.opt.foldlevel = 99 -- Start with all folds open
+vim.opt.foldlevelstart = 10
+vim.opt.foldnestmax = 4
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
+
 --
 --  Notice listchars is set using `vim.opt` instead of `vim.o`.
 --  It is very similar to `vim.o` but offers an interface for conveniently interacting with tables.
