@@ -1,5 +1,30 @@
 # NVIM HELPERS
 
+## Moving around
+
+Official documentation [here](https://neovim.io/doc/user/usr_03.html) 
+
+- `gg` go to the beginning of the files
+- `G` go to the end of the files
+- `nG` go to the nth line of the files
+- `0` go to the beginning of the lines
+- `$` go to the end of the lines
+- `w` go to the beginning of the next word
+- `b` go to the beginning of the previous word
+- `e` go to the end of the current word
+- `H` go to the top of the screen
+- `M` go to the middle of the screen
+- `L` go to the bottom of the screen
+- `{` go to the beginning of the previous paragraph
+- `}` go to the beginning of the next paragraph
+- `Ctrl + d` go down half a screen
+- `Ctrl + u` go up half a screen
+- `Ctrl + f` go down a full screen
+- `Ctrl + b` go up a full screen
+- `*` search for the word under the cursor
+- `#` search for the word under the cursor in reverse direction
+
+
 
 ## Replace regex in selected lines
 
