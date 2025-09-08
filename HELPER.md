@@ -75,3 +75,8 @@ Aslo add the number of tabs you want to add/remove before clicking `>` or `<`. F
 - `zM` fold all
 - `zk` fold one level up
 - `zj` unfold one level down
+
+
+## Change the colorscheme
+
+- `:colorscheme <name_of_colorscheme>` to change the colorscheme
