@@ -1,8 +1,10 @@
 return {
   { -- Collection of various small independent plugins/modules
-    'echasnovski/mini.nvim',
+    'nvim-mini/mini.nvim',
     config = function()
       -- Better Around/Inside textobjects
+      require('mini.indentscope').setup()
+      require('mini.trailspace').setup()
       --
       -- Examples:
       --  - va)  - [V]isually select [A]round [)]paren

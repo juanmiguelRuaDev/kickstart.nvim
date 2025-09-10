@@ -80,3 +80,26 @@ Aslo add the number of tabs you want to add/remove before clicking `>` or `<`. F
 ## Change the colorscheme
 
 - `:colorscheme <name_of_colorscheme>` to change the colorscheme
+
+## Split windows
+
+- `Ctrl + w + s` to split the window horizontally
+- `Ctrl + w + v` to split the window vertically
+- `Ctrl + w + w` to switch between windows
+- `Ctrl + w + q` to close the current window
+- `Ctrl + w + h` to move to the left window
+- `Ctrl + w + j` to move to the bottom window
+- `Ctrl + w + k` to move to the top window
+- `Ctrl + w + l` to move to the right window
+- `Ctrl + w + =` to make all windows equal size
+- `Ctrl + w + _` to make the current window the full height
+- `Ctrl + w + |` to make the current window the full width
+- `Ctrl + w + o` to close all other windows except the current one
+- `:split <file_path>` to split the window horizontally and open a file
+- `:vsplit <file_path>` to split the window vertically and open a file  
+- `:new` to open a new empty windows
+- `:vnew` to open a new empty windows vertically
+- `:close` to close the current windows
+- `:only` to close all other windows except the current one
+- `Ctrl + w + < or >` to adjust the width of the current windows
+- `Ctrl + w + + or -` to adjust the height of the current windows
