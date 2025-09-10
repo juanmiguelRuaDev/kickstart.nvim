@@ -96,7 +96,7 @@ Aslo add the number of tabs you want to add/remove before clicking `>` or `<`. F
 - `Ctrl + w + |` to make the current window the full width
 - `Ctrl + w + o` to close all other windows except the current one
 - `:split <file_path>` to split the window horizontally and open a file
-- `:vsplit <file_path>` to split the window vertically and open a file  
+- `:vsplit <file_path>` to split the window vertically and open a file
 - `:new` to open a new empty windows
 - `:vnew` to open a new empty windows vertically
 - `:close` to close the current windows

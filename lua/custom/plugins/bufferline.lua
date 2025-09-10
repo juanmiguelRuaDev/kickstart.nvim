@@ -9,6 +9,7 @@ return {
         options = {
           numbers = 'none',
           bottom = true,
+          separator_style = 'thick',
           offsets = {
             {
               filetype = 'neo-tree',
