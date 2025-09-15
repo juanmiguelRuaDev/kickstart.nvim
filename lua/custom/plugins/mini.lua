@@ -5,6 +5,7 @@ return {
       -- Better Around/Inside textobjects
       require('mini.indentscope').setup()
       require('mini.trailspace').setup()
+      require('mini.cursorword').setup()
       --
       -- Examples:
       --  - va)  - [V]isually select [A]round [)]paren
