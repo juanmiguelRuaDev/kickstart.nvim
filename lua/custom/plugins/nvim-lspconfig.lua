@@ -200,6 +200,18 @@ return {
             enable = true,
           },
         },
+        jqls = {
+          cmd = { 'jqls', '--stdio' },
+          filetypes = { 'jq' },
+        },
+        jsonls = {
+          settings = {
+            json = {
+              schemas = require('schemastore').json.schemas(),
+              validate = { enable = true },
+            },
+          },
+        },
         gopls = {
           gofumpt = true,
           codelenses = {
