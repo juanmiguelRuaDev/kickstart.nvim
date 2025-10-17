@@ -2,7 +2,7 @@
 
 ## Moving around
 
-Official documentation [here](https://neovim.io/doc/user/usr_03.html) 
+Official documentation [here](https://neovim.io/doc/user/usr_03.html)
 
 - `gg` go to the beginning of the files
 - `G` go to the end of the files
@@ -44,7 +44,7 @@ Official documentation [here](https://neovim.io/doc/user/usr_03.html)
 
 - Then, write the command to find and replace in all files
 
-```bash 
+```bash
 :cdo %s/old/new/gc # apply the change to the resutlt
 :cfdo %s/old/new/gc # apply the change to the current file
 ```
@@ -75,6 +75,13 @@ Aslo add the number of tabs you want to add/remove before clicking `>` or `<`. F
 - `zM` fold all
 - `zk` fold one level up
 - `zj` unfold one level down
+
+## Buffer management
+
+- `:%bd|e#` to close all Buffers except the current one
+- `:bnext` or `:bn` to go to the next Buffer
+- `:bprev` or `:bp` to go to the previous Buffer
+- `:bdelete` or `:bd` to delete the current Buffer
 
 
 ## Change the colorscheme
