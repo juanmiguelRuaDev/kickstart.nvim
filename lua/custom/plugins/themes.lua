@@ -18,6 +18,13 @@ return {
       end,
     },
   },
+  {
+    'loctvl842/monokai-pro.nvim',
+    name = 'monokai-pro',
+    config = function()
+      require('monokai-pro').setup { transparent_background = true }
+    end,
+  },
   { 'folke/tokyonight.nvim', name = 'tokyonight', priority = 1000, opts = { transparent = true } },
   { 'rose-pine/neovim', name = 'rose-pine' },
   { 'rebelot/kanagawa.nvim', name = 'kanagawa' },
