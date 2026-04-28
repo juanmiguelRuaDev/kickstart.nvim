@@ -29,4 +29,9 @@ return {
       },
     },
   },
+  config = function(_, opts)
+    require('neo-tree').setup(opts)
+    local events = require 'neo-tree.events'
+    events.fire_event(events.GIT_EVENT)
+  end,
 }
