@@ -33,5 +33,20 @@ return {
     require('neo-tree').setup(opts)
     local events = require 'neo-tree.events'
     events.fire_event(events.GIT_EVENT)
+
+    vim.api.nvim_create_autocmd('User', {
+      pattern = 'GitIndexUpdated',
+      callback = function()
+        events.fire_event(events.GIT_EVENT)
+      end,
+    })
+
+    vim.schedule(function()
+      vim.loop.new_fs_event():start(vim.fn.getcwd() .. '/.git/index', {}, function()
+        vim.schedule(function()
+          events.fire_event(events.GIT_EVENT)
+        end)
+      end)
+    end)
   end,
 }
