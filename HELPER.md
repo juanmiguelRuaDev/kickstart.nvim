@@ -110,3 +110,13 @@ Aslo add the number of tabs you want to add/remove before clicking `>` or `<`. F
 - `:only` to close all other windows except the current one
 - `Ctrl + w + < or >` to adjust the width of the current windows
 - `Ctrl + w + + or -` to adjust the height of the current windows
+
+## Git Conflicts mappings
+
+- ]x - move to the next conflict
+- [x - move to the previous conflict
+- co - choose the current change
+- ci - choose the incoming change
+- cb - choose both changes
+- c0 - choose none of the changes
+
