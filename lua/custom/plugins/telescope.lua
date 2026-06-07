@@ -62,6 +62,11 @@ return {
         --   },
         -- },
         -- pickers = {},
+        defaults = {
+          preview = {
+            treesitter = false,
+          },
+        },
         pickers = {
           live_grep = {
             additional_args = function()
